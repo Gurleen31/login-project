@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>login page</title>
+    <link rel="stylesheet" type="text/css" href="css.css"/>
+</head>
+<script>
+    function validate()
+    {
+        var username=document.getElementById("uname");
+        var email=document.getElementById("email");
+        var password=document.getElementById("password");
+        if (username.value.trim()=="")
+        {
+            alert("PLEASE FILL THE USERNAME");  
+            return false; 
+        }
+        else if(email.value.trim()=="")
+        {
+            alert("PLEASE FILL THE EMAIL");  
+            return false; 
+        }
+        else if(password.value.trim()=="")
+        {
+            alert("PLEASE FILL THE PASSWORD");  
+            return false;   
+        } 
+        else if(password.value.trim().length<6)
+        {
+            alert("PASSWORD MUST CONTAIN 6 DIGITS");
+            return false;
+        }  
+    }
+    function validateForm()
+    {
+        var email=document.getElementById("email");
+        var atpos=email.indexOf("@");
+        var dotpos=email.lastIndexOf(".");
+        if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+         {
+            alert("Not a valid e-mail address");
+            return false;
+        }
+    }
+
+</script>
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="signup">
+            <form onsubmit=" return validate()" action="login page3.html">
+            <label for="chk" aria-hidden="true">Sign up</label>
+            <input id="uname" type="text" placeholder="username">
+            <input id="email" type="email" placeholder="email">
+            <input id="password" type="password" placeholder="password">/
+            <center> <a href="login.html">ALREADY SIGN UP!</a></center>
+            <button>SIGN UP</button>
+        </form>
+
+        </div>
+        <div class="login">
+            <form>
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" placeholder="email">
+                <input type="password" name="p" placeholder="password" >
+                <button>Login </button>
+            </form>
+             
+        </div>
+    </body>
+    </html>
