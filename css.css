@@ -11,7 +11,7 @@ body{
 .main{
     width: 450px;
     height:500px;
-    background:pink;
+    background:orangered;
     overflow:hidden;
     background:url(background\ image.png) no-repeat center/cover;
     border-radius:10px;
