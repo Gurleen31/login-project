@@ -11,11 +11,11 @@ body{
 .main{
     width: 450px;
     height:500px;
-    background:red;
+    background:pink;
     overflow:hidden;
     background:url(background\ image.png) no-repeat center/cover;
     border-radius:10px;
-    box-shadow:5px 20px 50px #000;
+    box-shadow:5px 20px 50px black;
 }
 #chk{
     display:none;
